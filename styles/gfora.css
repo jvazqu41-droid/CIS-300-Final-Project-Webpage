@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Palatino Linotype", "Book Antiqua",
+        Palatino, serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+ul {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+body p {
+    width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
+
+footer {
+    text-align: center;
+    border: 5px solid #000000;
+}
+
+footer p {
+    margin: 10px auto;
+}
+
+#homehero {
+    height: 500px;
+    background-image: url(../images/hero_bread.jpg);
+    background-size: 100% 100%;
+}
+
+#checkbox {
+    display: grid;
+    grid-template-areas:
+        "label label label"
+        "input input input"
+    ;
+}
+
+#most-popular {
+    display: grid;
+    grid-template-areas:
+        "h2 h2 h2"
+        "img img img";
+    justify-content: space-evenly;
+    gap: 40px;
+    grid-row-start: auto;
+}
+
+#most-popular img {
+    width: 250px;
+    height: 250px;
+}
+
+#mission {
+    text-align: center;
+}
