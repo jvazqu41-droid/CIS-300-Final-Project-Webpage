@@ -5,6 +5,9 @@
 body {
     font-family: "Palatino Linotype", "Book Antiqua",
         Palatino, serif;
+
+    background: #0b1412;
+    color: #e1eeeb;
 }
 
 header {
@@ -14,14 +17,10 @@ header {
     justify-content: center;
 }
 
-header img {
-    width: 75px;
-    height: 75px;
-    padding: 10px;
-}
-
-h1 {
+h1,
+h2 {
     text-align: center;
+    color: #a7d5cb;
 }
 
 a {
@@ -29,8 +28,8 @@ a {
 }
 
 nav {
-    border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000;
+    border-top: 5px inset #4fbba4;
+    border-bottom: 5px inset #4fbba4;
 }
 
 ul {
@@ -48,19 +47,26 @@ body p {
 }
 
 form {
+    width: 425px;
     display: grid;
     align-content: center;
     justify-content: center;
-    margin: 10px 10px 10px 10px;
+    padding: 0px 15px 15px 15px;
+    margin: auto;
+    border: 5px inset #4fbba4;
 }
 
 footer {
     text-align: center;
-    border: 5px solid #000000;
+    border: 5px inset #4fbba4;
 }
 
 footer p {
     margin: 10px auto;
+}
+
+.most-popular {
+    border: 5px dashed #a7d5cb;
 }
 
 #homehero {
@@ -94,4 +100,14 @@ footer p {
 
 #mission {
     text-align: center;
+}
+
+#recipe-landing {
+    display: grid;
+    grid-template-areas:
+        "h2 h2 h2"
+        "img img img";
+    justify-content: space-evenly;
+    gap: 40px;
+    grid-row-start: auto;
 }
